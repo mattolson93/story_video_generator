@@ -1,0 +1,2 @@
+ eval "$(python tts.py ../text/stories/story1.txt 2 )"
+for f in `ls`; do ffmpeg -i $f  -af "adelay=1000|1000" pad$f ; done
